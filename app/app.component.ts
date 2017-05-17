@@ -1,8 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
+	moduleId: module.id,
   selector: 'my-app',
-  template: `<router-outlet></router-outlet>`,
+  encapsulation: ViewEncapsulation.None,
+  templateUrl: './app.component.html',
+  styleUrls: ['./assets/global.scss']
 })
 export class AppComponent  { name = 'Isidora'; }
